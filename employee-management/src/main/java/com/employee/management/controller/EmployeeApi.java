@@ -22,7 +22,7 @@ public class EmployeeApi {
     }
 
     // http://localhost:8080/allStudents
-    @GetMapping("/allStudents")
+    @GetMapping("/allEmployees")
     public ResponseEntity<List<Employee>> getAllEmployees(){
         List<Employee> employeeList = employeeService.getAllEmployee();
         return new ResponseEntity<>(employeeList, HttpStatus.OK);
